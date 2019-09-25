@@ -1,0 +1,11 @@
+backend:
+  name: git-gateway
+  branch: master # Branch to update (optional; defaults to master)
+collections:
+  - name: "blog"
+    label: "Blog"
+    folder: "_posts/blog"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+media_folder: "static/images/uploads"
