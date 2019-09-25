@@ -8,7 +8,10 @@ module.exports = {
   siteName: 'Lukehmu',
   plugins: [
     {
-      use: `gridsome-plugin-netlify-cms`
+      use: `gridsome-plugin-netlify-cms`,
+      options: {
+        publicPath: "/admin"
+      }
     }
   ]
 }
