@@ -3,11 +3,13 @@ backend:
   branch: master # Branch to update (optional; defaults to master)
 media_folder: "static/images/uploads"
 collections:
-  - name: "blog"
-    label: "Blog"
-    folder: "_posts/blog"
-    slug: "{{slug}}"
+  - name: "posts"
+    label: "Posts"
+    folder: "posts"
     create: true
+    slug: "{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Excerpt", name: "excerpt", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "date"}
       - {label: "Body", name: "body", widget: "markdown"}
